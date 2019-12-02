@@ -1,0 +1,8 @@
+(define (pr1.3 a b c)
+  (cond ((>= a b) (if (>= b c)
+                     (+ (* a a) (* b b))
+                     (+ (* a a) (* c c))))
+        ((>= b c) (if (>= c a)
+                     (+ (* b b) (* c c))
+                     (+ (* b b) (* a a))))
+        ))
