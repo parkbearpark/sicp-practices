@@ -1,4 +1,4 @@
-(define (pr1.3 a b c)
+(define (pr1-3 a b c)
   (cond ((>= a b) (if (>= b c)
                      (+ (* a a) (* b b))
                      (+ (* a a) (* c c))))
