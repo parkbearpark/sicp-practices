@@ -1,0 +1,16 @@
+(define (gcd-tekiyo a b)
+  (display a)
+  (display #\Space)
+  (display b)
+  (display #\Linefeed)
+  (cond ((= (modulo a b) 0) b)
+        (else (gcd-tekiyo b (modulo a b)))))
+
+(define (gcd-seiki a b)
+  (display a)
+  (display #\Space)
+  (display b)
+  (display #\Linefeed)
+  (if (= (modulo a b) 0)
+      b
+      (gcd-seiki b (modulo a b))))
